@@ -16,6 +16,10 @@ dependencies {
 	//Dependencia agregada
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	/*Esto para que solo se haa uso en tiempo de ejecución
+	* Se importa postgres
+	 */
+	runtimeOnly 'org.postgresql:postgresql'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 

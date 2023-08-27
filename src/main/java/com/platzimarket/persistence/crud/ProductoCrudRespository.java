@@ -30,7 +30,7 @@ public interface ProductoCrudRespository extends CrudRepository<Producto, Intege
 
     // Ejemplo con un Query nativo !!!
 
-    @Query(value = "SELECT * FROM productos WHERE id_categoria = ?", nativeQuery = true)
+    @Query(value = "SELECT * FROM category WHERE id_categoria = ?", nativeQuery = true)
     List<Producto> getByCategoria(int idCategoria);
 
     // Los Query methods soportan operadores opcionales <> para manejo de nulos. Previene el NullExeption !

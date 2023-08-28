@@ -7,10 +7,12 @@ import com.platzimarket.persistence.crud.CompraCrudRespository;
 import com.platzimarket.persistence.entity.Compra;
 import com.platzimarket.persistence.mapper.PurchaseItemMapper;
 import com.platzimarket.persistence.mapper.PurchaseMapper;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
 
+@Repository
 public class CompraRespository implements PurchaseRespository {
 
     private final CompraCrudRespository compraCrudRespository;

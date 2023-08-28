@@ -19,9 +19,8 @@ public class Categoria {
 
     // Está mapeado por el atributo categoria en la clase producto.
     @OneToMany(mappedBy = "categoria")
-    @JoinColumn(name = "id_producto")
     // La categoria tiene una lista de productos
-    private List<Producto> producto;
+    private List<Producto> productos;
 
     public Integer getIdCategoria() {
         return idCategoria;
@@ -45,5 +44,13 @@ public class Categoria {
 
     public void setEstado(Boolean estado) {
         this.estado = estado;
+    }
+
+    public List<Producto> getProductos() {
+        return productos;
+    }
+
+    public void setProductos(List<Producto> productos) {
+        this.productos = productos;
     }
 }

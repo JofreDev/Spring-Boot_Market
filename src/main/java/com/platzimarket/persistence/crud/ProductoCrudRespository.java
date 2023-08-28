@@ -29,10 +29,10 @@ public interface ProductoCrudRespository extends CrudRepository<Producto, Intege
     List<Producto> findByIdCategoriaOrderByNombreAsc(int idCategoria);
 
     // Ejemplo con un Query nativo !!!
-
+/*
     @Query(value = "SELECT * FROM category WHERE id_categoria = ?", nativeQuery = true)
     List<Producto> getByCategoria(int idCategoria);
-
+*/
     // Los Query methods soportan operadores opcionales <> para manejo de nulos. Previene el NullExeption !
     // Se quieren recuperar los productos escasos
     // 'LessThan' indica en menor cantidad

@@ -1,4 +1,4 @@
-package com.platzimarket.domain;
+package com.platzimarket.domain.dto;
 
 public class Category {
 

@@ -1,6 +1,6 @@
 package com.platzimarket.persistence;
 
-import com.platzimarket.domain.Product;
+import com.platzimarket.domain.dto.Product;
 import com.platzimarket.domain.repository.ProductRepository;
 import com.platzimarket.persistence.crud.ProductoCrudRespository;
 import com.platzimarket.persistence.entity.Producto;

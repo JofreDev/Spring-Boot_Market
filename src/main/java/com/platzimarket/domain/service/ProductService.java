@@ -1,7 +1,7 @@
 package com.platzimarket.domain.service;
 
 
-import com.platzimarket.domain.Product;
+import com.platzimarket.domain.dto.Product;
 import com.platzimarket.domain.repository.ProductRepository;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;

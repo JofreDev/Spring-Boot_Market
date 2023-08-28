@@ -34,8 +34,17 @@ public class Compra {
 
     // Configuración de la relación Compra - CompraProducto
 
-    @OneToMany(mappedBy = "compra")
+    // Todos los procesos que se hagan con la entidad compra
+    // tambien incluirá los productos
+    @OneToMany(mappedBy = "compra", cascade = {CascadeType.ALL})
     private List<ComprasProducto> Productos;
+
+    /*
+    Cuando queremos guardar en cascada debemos poner la anotación @MapsId
+    porque esta anotación es la que proporciona la asignación para una
+    clave primaria cuando se usa @EmbeddedId. La anotación @JoinColumn solo
+    especifica que columna se relaciona a la hora trabajar con el atributo de la relación.
+     */
 
     public Integer getIdCompra() {
         return idCompra;
@@ -83,5 +92,21 @@ public class Compra {
 
     public void setEstado(String estado) {
         this.estado = estado;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
+    public List<ComprasProducto> getProductos() {
+        return Productos;
+    }
+
+    public void setProductos(List<ComprasProducto> productos) {
+        Productos = productos;
     }
 }

@@ -1,6 +1,6 @@
 package com.platzimarket.web.controller;
 
-import com.platzimarket.domain.Product;
+import com.platzimarket.domain.dto.Product;
 import com.platzimarket.domain.service.ProductService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
